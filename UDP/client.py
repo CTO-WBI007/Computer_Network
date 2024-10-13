@@ -17,7 +17,7 @@ def start_client():
         message = generate_random_string()
         print(message)
 
-        client_socket.sendto(message.encode(), ('localhost', 8080)) # encode and snending
+        client_socket.sendto(message.encode(), ('localhost', 8080)) # encode and send
 
         result = client_socket.recv(1024) # accept and receive
     
