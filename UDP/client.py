@@ -16,7 +16,7 @@ def start_client():
         message = generate_random_string()
         print(message)
 
-        client_socket.sendto(message.encode(), ('172.19.86.90', 8080))
+        client_socket.sendto(message.encode(), ('localhost', 8080))
 
         result = client_socket.recv(1024)
     
